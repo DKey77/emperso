@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>EMPERSO | Premium Oversized Apparel</title>
+    
+    <!-- SEO & Search Engine Optimization -->
+    <meta name="description" content="EMPERSO — преміальний український бренд оверсайз одягу. Якість, стиль, свобода. Відкрий для себе нову еру вуличного стилю.">
+    <meta name="keywords" content="EMPERSO, одяг, оверсайз, купити худі, преміум одяг, український бренд, streetwear Ukraine">
+    <link rel="canonical" href="https://emperso.com.ua/" />
+    
+    <!-- OpenGraph (Facebook, Instagram, LinkedIn, AI Preview) -->
+    <meta property="og:title" content="EMPERSO | Premium Apparel">
+    <meta property="og:description" content="Відкрий для себе нову еру оверсайз стилю. Made in Ukraine. Якість, що говорить сама за себе.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emperso.com.ua/">
+    <meta property="og:site_name" content="EMPERSO Official">
+    <meta property="og:image" content="https://emperso.com.ua/og-image.jpg">
+
+    <!-- Twitter Card (For AI tools and Twitter/X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EMPERSO Premium Apparel">
+    <meta name="twitter:description" content="Преміальний оверсайз одяг. Зроблено в Україні.">
+    
+    <meta name="theme-color" content="#1a1a1a">
+
+    <!-- Theme Initialization Script to prevent flicker -->
+    <script>
+      (function() {
+        const saved = localStorage.getItem('emperso_theme');
+        const theme = saved || 'light';
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#1a1a1a',
+                light: '#f9f9fb',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      * {
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+      }
+      body {
+        transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #1a1a1a;
+      }
+      .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #ffffff;
+      }
+      html {
+        scroll-padding-top: 80px;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.7",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-light text-brand-dark dark:bg-brand-dark dark:text-brand-light selection:bg-brand-dark selection:text-white dark:selection:bg-brand-light dark:selection:text-brand-dark">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
